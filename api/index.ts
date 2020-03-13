@@ -18,27 +18,27 @@ export default async (_, response: NowResponse) => {
   response.json({
     confirmed: {
       value: confirmed,
-      detail: "https://covid19.mathdro.id/api/confirmed"
+      detail: "https://covid-2019.now.sh/api/confirmed"
     },
     recovered: {
       value: recovered,
-      detail: "https://covid19.mathdro.id/api/recovered"
+      detail: "https://covid-2019.now.sh/api/recovered"
     },
     deaths: {
       value: deaths,
-      detail: "https://covid19.mathdro.id/api/deaths"
+      detail: "https://covid-2019.now.sh/api/deaths"
     },
-    dailySummary: "https://covid19.mathdro.id/api/daily",
+    dailySummary: "https://covid-2019.now.sh/api/daily",
     dailyTimeSeries: {
-      pattern: "https://covid19.mathdro.id/api/daily/[dateString]",
-      example: "https://covid19.mathdro.id/api/daily/2-14-2020"
+      pattern: "https://covid-2019.now.sh/api/daily/[dateString]",
+      example: "https://covid-2019.now.sh/api/daily/2-14-2020"
     },
-    image: "https://covid19.mathdro.id/api/og",
-    source: "https://github.com/mathdroid/covid19",
-    countries: "https://covid19.mathdro.id/api/countries",
+    image: "https://covid-2019.now.sh/api/og",
+    source: "https://github.com/kaansey/covid-19-api",
+    countries: "https://covid-2019.now.sh/api/countries",
     countryDetail: {
-      pattern: "https://covid19.mathdro.id/api/countries/[country]",
-      example: "https://covid19.mathdro.id/api/countries/USA"
+      pattern: "https://covid-2019.now.sh/api/countries/[country]",
+      example: "https://covid-2019.now.sh/api/countries/USA"
     },
     lastUpdate
   });
